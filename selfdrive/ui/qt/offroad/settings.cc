@@ -696,7 +696,7 @@ SelectCar::SelectCar(QWidget* parent): QWidget(parent) {
   QScroller::grabGesture(list->viewport(), QScroller::LeftMouseButtonGesture);
   list->setVerticalScrollMode(QAbstractItemView::ScrollPerPixel);
 
-  list->addItem("[ Not selected ]");
+  list->addItem("[ لم يتم اختياره ]");
 
   QStringList items = get_list("/data/params/d/SupportedCars");
   list->addItems(items);
