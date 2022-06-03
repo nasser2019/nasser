@@ -195,7 +195,6 @@ def thermald_thread(end_event, hw_queue):
 
     msg = read_thermal(thermal_config)
 
-    # neokii
     if sec_since_boot() - restart_triggered_ts < 5.:
       onroad_conditions["not_restart_triggered"] = False
     else:
