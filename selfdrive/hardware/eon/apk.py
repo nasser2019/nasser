@@ -5,7 +5,7 @@ import hashlib
 import shutil
 from common.basedir import BASEDIR
 
-android_packages = ("com.neokii.optool", )
+android_packages = ("com.NASSER.optool", )
 
 def get_installed_apks():
   dat = subprocess.check_output(["pm", "list", "packages", "-f"], encoding='utf8').strip().split("\n")
