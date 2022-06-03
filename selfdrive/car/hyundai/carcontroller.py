@@ -163,7 +163,7 @@ class CarController():
     if pcm_cancel_cmd and (self.longcontrol and not self.mad_mode_enabled):
       can_sends.append(create_clu11(self.packer, CS.scc_bus, CS.clu11, Buttons.CANCEL, clu11_speed))
 
-    # fix auto resume - by neokii
+    # fix auto resume 
     if CS.out.cruiseState.standstill and not CS.out.gasPressed:
 
       if self.last_lead_distance == 0:
