@@ -68,7 +68,6 @@ class Planner:
     v_cruise_kph = min(v_cruise_kph, V_CRUISE_MAX)
     v_cruise = v_cruise_kph * CV.KPH_TO_MS
 
-    # neokii
     if not self.use_cluster_speed:
       vCluRatio = sm['carState'].vCluRatio
       if vCluRatio > 0.5:
