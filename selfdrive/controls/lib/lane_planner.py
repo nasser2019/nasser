@@ -126,7 +126,6 @@ class LanePlanner:
 
     self.d_prob = l_prob + r_prob - l_prob * r_prob
 
-    # neokii
     if ENABLE_INC_LANE_PROB and self.d_prob > 0.65:
       self.d_prob = min(self.d_prob * 1.3, 1.0)
 
