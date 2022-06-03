@@ -45,7 +45,6 @@ protected:
   inline QColor whiteColor(int alpha = 255) { return QColor(255, 255, 255, alpha); }
   double prev_draw_t = 0;
 
-  // neokii
   void drawIcon(QPainter &p, int x, int y, QPixmap &img, QBrush bg, float opacity);
   void drawText(QPainter &p, int x, int y, const QString &text, int alpha = 255);
   void drawText2(QPainter &p, int x, int y, int flags, const QString &text, const QColor& color);
@@ -55,7 +54,6 @@ protected:
   const int radius = 192;
   const int img_size = (radius / 2) * 1.5;
 
-  // neokii
   QPixmap ic_brake;
   QPixmap ic_autohold_warning;
   QPixmap ic_autohold_active;
@@ -97,7 +95,6 @@ private:
   QWidget *map = nullptr;
   QHBoxLayout* split;
 
-  // neokii
 private:
   ScreenRecoder* recorder;
   std::shared_ptr<QTimer> record_timer;
