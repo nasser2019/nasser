@@ -559,7 +559,7 @@ void NvgWindow::drawBottomIcons(QPainter &p) {
   }
 
   configFont(p, "Open Sans", 35, "Bold");
-  drawText(p, x, y-20, "GAP", 200);
+  drawText(p, x, y-20, "المسافة", 200);
 
   configFont(p, "Open Sans", textSize, "Bold");
   drawTextWithColor(p, x, y+50, str, textColor);
