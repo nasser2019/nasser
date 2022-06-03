@@ -1537,7 +1537,6 @@ struct Event {
     navRoute @83 :NavRoute;
     navThumbnail @84: Thumbnail;
     
-    # neokii
     roadLimitSpeed @86 :RoadLimitSpeed;
 
     # *********** debug ***********
