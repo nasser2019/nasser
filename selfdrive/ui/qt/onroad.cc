@@ -627,7 +627,7 @@ void NvgWindow::drawMaxSpeed(QPainter &p) {
     }
 
     configFont(p, "Open Sans", 76, "sans-semibold");
-    drawText(p, rc.center().x(), 195, "N/A", 100);
+    drawText(p, rc.center().x(), 195, "غير متاحة", 100);
   }
 }
 
