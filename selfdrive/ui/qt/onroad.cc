@@ -623,7 +623,7 @@ void NvgWindow::drawMaxSpeed(QPainter &p) {
     }
     else {
       configFont(p, "Open Sans", 48, "sans-semibold");
-      drawText(p, rc.center().x(), 100, "MAX", 100);
+      drawText(p, rc.center().x(), 100, "أقصى", 100);
     }
 
     configFont(p, "Open Sans", 76, "sans-semibold");
@@ -659,7 +659,7 @@ void NvgWindow::drawSpeed(QPainter &p) {
   drawTextWithColor(p, rect().center().x(), 230, speed, color);
 
   configFont(p, "Open Sans", 66, "Regular");
-  drawText(p, rect().center().x(), 310, s->scene.is_metric ? "km/h" : "mph", 200);
+  drawText(p, rect().center().x(), 310, s->scene.is_metric ? "كلم/س" : "ميل", 200);
 }
 
 void NvgWindow::drawSpeedLimit(QPainter &p) {
