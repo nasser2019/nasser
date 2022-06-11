@@ -66,7 +66,7 @@ DriveStats::DriveStats(QWidget* parent) : QFrame(parent) {
 void DriveStats::updateStats() {
   auto update = [=](const QJsonObject& obj, StatsLabels& labels) {
     labels.routes->setText(QString::number((int)obj["الطريق"].toDouble()));
-    labels.distance->setText(QString::number(int(obj["المسافة"].toDouble() * (metric_ ? MILE_TO_KM : 1))));
+    labels.distance->setText(QString::number(int(obj["المسافة"].toDouble() * (metric_ ? ميل_TO_كلم : 1))));
     labels.distance_unit->setText(getDistanceUnit());
     labels.hours->setText(QString::number((int)(obj["دقيقة"].toDouble() / 60)));
   };
