@@ -853,12 +853,12 @@ EVENTS: Dict[int, Dict[str, Union[Alert, AlertCallbackType]]] = {
   },
 
   EventName.slowingDownSpeed: {
-    ET.PERMANENT: Alert("تباطؤ","", AlertStatus.normal, AlertSize.small,
+    ET.PERMANENT: Alert("تباطئ","", AlertStatus.normal, AlertSize.small,
       Priority.MID, VisualAlert.none, AudibleAlert.none, .1),
   },
 
   EventName.slowingDownSpeedSound: {
-    ET.PERMANENT: Alert("تباطؤ","", AlertStatus.normal, AlertSize.small,
+    ET.PERMANENT: Alert("تباطئ","", AlertStatus.normal, AlertSize.small,
       Priority.HIGH, VisualAlert.none, AudibleAlert.slowingDownSpeed, 2.),
   },
 
