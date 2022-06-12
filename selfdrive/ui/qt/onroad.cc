@@ -604,7 +604,7 @@ void NvgWindow::drawMaxSpeed(QPainter &p) {
     if (is_metric)
         snprintf(str, sizeof(str), "%d", (int)(applyMaxSpeed + 0.5));
     else
-        snprintf(str, sizeof(str), "%d", (int)(applyMaxSpeed*كلم_TO_ميل + 0.5));
+        snprintf(str, sizeof(str), "%d", (int)(applyMaxSpeed*KM_TO_MILE + 0.5));
 
     configFont(p, "Open Sans", 45, "Bold");
     drawText(p, rc.center().x(), 100, str, 255);
@@ -612,7 +612,7 @@ void NvgWindow::drawMaxSpeed(QPainter &p) {
     if (is_metric)
         snprintf(str, sizeof(str), "%d", (int)(cruiseMaxSpeed + 0.5));
     else
-        snprintf(str, sizeof(str), "%d", (int)(cruiseMaxSpeed*كلم_TO_ميل + 0.5));
+        snprintf(str, sizeof(str), "%d", (int)(cruiseMaxSpeed*KM_TO_MILE + 0.5));
 
     configFont(p, "Open Sans", 76, "Bold");
     drawText(p, rc.center().x(), 195, str, 255);
