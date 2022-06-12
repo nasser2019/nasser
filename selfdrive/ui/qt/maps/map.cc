@@ -390,7 +390,7 @@ void MapInstructions::updateDistance(float d) {
   if (uiState()->scene.is_metric) {
     if (d > 500) {
       distance_str.setNum(d / 1000, 'f', 1);
-      distance_str += " km";
+      distance_str += " كلم ";
     } else {
       distance_str.setNum(50 * int(d / 50));
       distance_str += " m";
@@ -621,10 +621,10 @@ void MapETA::updateETA(float s, float s_typical, float d) {
   float num = 0;
   if (uiState()->scene.is_metric) {
     num = d / 1000.0;
-    distance_unit->setText("km");
+    distance_unit->setText("كلم");
   } else {
     num = d * METER_TO_MILE;
-    distance_unit->setText("mi");
+    distance_unit->setText("ميل");
   }
 
   distance_str.setNum(num, 'f', num < 100 ? 1 : 0);
