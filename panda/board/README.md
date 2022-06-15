@@ -35,7 +35,7 @@ If your panda will not flash and is quickly blinking a single Green LED, use:
 ./recover.sh     # for other pandas
 ```
 
-ال [الباندا](https://comma.ai/shop/products/panda-paw) يمكن استخدامها لوضع الباندا في وضع DFU.
+موصل [الباندا](https://comma.ai/shop/products/panda-paw) يمكن استخدامها لوضع الباندا في وضع DFU.
 
 
 [استخدم](http://github.com/dsigma/dfu-util.git) إذا كان يومض.
