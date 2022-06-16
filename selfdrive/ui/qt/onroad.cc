@@ -473,7 +473,7 @@ void NvgWindow::drawHud(QPainter &p) {
 }
 
 static const QColor get_tpms_color(float tpms) {
-    if(tpms < 5 || tpms > 60) // N/A
+    if(tpms < 5 || tpms > 60) // غ/م
         return QColor(255, 255, 255, 220);
     if(tpms < 31)
         return QColor(255, 90, 90, 220);
@@ -543,7 +543,7 @@ void NvgWindow::drawBottomIcons(QPainter &p) {
   QColor textColor = QColor(255, 255, 255, 200);
 
   if(gap <= 0) {
-    str = "N/A";
+    str = "غ/م";
   }
   else if(longControl && gap == autoTrGap) {
     str = "AUTO";
