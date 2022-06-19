@@ -339,8 +339,8 @@ EVENTS: Dict[int, Dict[str, Union[Alert, AlertCallbackType]]] = {
 
   EventName.stockAeb: {
     ET.PERMANENT: Alert(
-      "الفرامل!",
-      "نظام فرماة الطوارئ: خطر الاصطدام",
+      "انتبه أمامك فوووووورد",
+      "نظام فرملة الطوارئ: خطر الاصطدام",
       AlertStatus.critical, AlertSize.full,
       Priority.HIGHEST, VisualAlert.fcw, AudibleAlert.none, 2.),
     ET.NO_ENTRY: NoEntryAlert("نظام التحذير من الاصطدام: خطر الاصطدام"),
@@ -348,8 +348,8 @@ EVENTS: Dict[int, Dict[str, Union[Alert, AlertCallbackType]]] = {
 
   EventName.fcw: {
     ET.PERMANENT: Alert(
-      "الفرامل!",
-      "خطر الاصطدام",
+      "انتبه أمامك فوووووورد",
+      "خطر الاصطدام وشيك
       AlertStatus.critical, AlertSize.full,
       Priority.HIGHEST, VisualAlert.fcw, AudibleAlert.warningSoft, 2.),
   },
