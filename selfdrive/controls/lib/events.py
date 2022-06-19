@@ -348,8 +348,8 @@ EVENTS: Dict[int, Dict[str, Union[Alert, AlertCallbackType]]] = {
 
   EventName.fcw: {
     ET.PERMANENT: Alert(
-      "انتبه أمامك فوووووورد",
-      "خطر الاصطدام وشيك
+      "انتبه أمامك فوووووورد"
+       "خطر الاصطدام وشيك",
       AlertStatus.critical, AlertSize.full,
       Priority.HIGHEST, VisualAlert.fcw, AudibleAlert.warningSoft, 2.),
   },
